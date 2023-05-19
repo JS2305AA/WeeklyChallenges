@@ -25,23 +25,35 @@ namespace ChallengesWithTestsMark8.Tests
 
             // Assert
             Assert.Equal(expected, actual);
-        }
 
-        [Theory]
-        [InlineData(10, 7, 3)]
-        [InlineData(100, 75, 25)]
-        [InlineData(1, 1, 0)]
-        [InlineData(10, 15, -5)]
-        [InlineData(0, 7, -7)]
-        [InlineData(0, 0, 0)]
-        [InlineData(-5, 5, -10)]
-        [InlineData(-10, -7, -3)]
-        [InlineData(-10, -15, 5)]
-        [InlineData(5.5, 1.2, 4.3)]
-        [InlineData(0.7, 0.35, 0.35)]
-        [InlineData(-2.2, 1.1, -3.3)]
-        public void Subtract(double minuend, double subtrahend, double expectedDifference)
-        {
+        }
+        
+            
+        
+        
+
+
+        
+
+        
+        
+        
+
+            [Theory]
+            [InlineData(10, 7, 3)]
+            [InlineData(100, 75, 25)]
+            [InlineData(1, 1, 0)]
+            [InlineData(10, 15, -5)]
+            [InlineData(0, 7, -7)]
+            [InlineData(0, 0, 0)]
+            [InlineData(-5, 5, -10)]
+            [InlineData(-10, -7, -3)]
+            [InlineData(-10, -15, 5)]
+            [InlineData(5.5, 1.2, 4.3)]
+            [InlineData(0.7, 0.35, 0.35)]
+            [InlineData(-2.2, 1.1, -3.3)]
+                public void Subtract(double minuend, double subtrahend, double expectedDifference)
+                {
             // Arrange
             ChallengesSet01 challenger = new ChallengesSet01();
 
@@ -50,7 +62,7 @@ namespace ChallengesWithTestsMark8.Tests
 
             // Assert
             Assert.Equal(Math.Round(expectedDifference, 2), Math.Round(actual, 2));
-        }
+                 }
 
         [Theory]
         [InlineData(10, 7, 17)]
@@ -86,7 +98,6 @@ namespace ChallengesWithTestsMark8.Tests
         [InlineData(-10, -15, -15)]
         public void GetSmallestNumber(int number1, int number2, int expected)
         {
-            // Arrange
             ChallengesSet01 challenger = new ChallengesSet01();
 
             // Act
@@ -151,5 +162,6 @@ namespace ChallengesWithTestsMark8.Tests
             // Assert
             Assert.Equal("HEY!", actual);
         }
+    
     }
 }
